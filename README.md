@@ -14,14 +14,21 @@ Document and interpret findings as part of the digital investigation process.
 
 ## PROGRAM:
 Data Extraction and Investigation Tool Usage
+~~~
+lsblk
 
-bash sudo dd if=/dev/sda of=/home/kali/disk.img bs=512
+sudo dd if=/dev/sda of=/home/kali/a.png bs=512
 
-bash mmls ~/disk.img
+mmls ~/a.png  (sleuth-kit)
+sudo fdisk -l ~/a.png (GNU)
 
-bash sudo ls -lh disk.img
+sudo ls -lh a.png
 
-bash strings disk.img | less
+strings a.png | less
+
+~~~
+
+
 ## OUTPUT:
 Unallocated Space Analysis and Extracted Data Report
 ![image](https://github.com/user-attachments/assets/d6022b47-7e8f-48e3-8d0d-a34908cef33c)
